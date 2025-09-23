@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-theme">
+  <div class="dashboard">
+    
+    <!-- Header -->
+    <header class="header">
+      <h1>Admin Dashboard</h1>
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+        <span class="label-text">Dark Mode</span>
+      </label>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#">🏠 Home</a></li>
+          <li><a href="#">👥 Users</a></li>
+          <li><a href="#">⚙️ Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <h2>Welcome to your dashboard</h2>
+      <p>This is a placeholder for data visualizations, reports, and other admin tools.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      &copy; 2025 Admin Dashboard. All rights reserved.
+    </footer>
+
+  </div>
+
+  <script>
+    // Theme switch logic
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    toggle.addEventListener('change', () => {
+      body.classList.toggle('dark-theme');
+      body.classList.toggle('light-theme');
+    });
+  </script>
+</body>
+</html>
+
+ 
+ 
